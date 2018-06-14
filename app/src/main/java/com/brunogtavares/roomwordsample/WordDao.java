@@ -1,5 +1,6 @@
 package com.brunogtavares.roomwordsample;
 
+import android.arch.lifecycle.LiveData;
 import android.arch.persistence.room.Dao;
 import android.arch.persistence.room.Insert;
 import android.arch.persistence.room.Query;
@@ -23,6 +24,8 @@ public interface WordDao {
     @Query("DELETE FROM word_table")
     void deleteAll();
 
+    // When the LiveData changes, the observer is notified and onChanged() is executed.
+    // You will then update the cached data in the adapter, and the adapter will update what the user sees.
     @Query("SELECT * FROM word_table ORDER BY word ASC")
-    List<Word> getAllWords();
+    LiveData<List<Word>> getAllWords();
 }

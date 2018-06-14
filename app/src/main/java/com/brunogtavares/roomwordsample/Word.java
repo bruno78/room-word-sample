@@ -15,7 +15,7 @@ import android.support.annotation.NonNull;
 public class Word {
 
     @PrimaryKey(autoGenerate = true)
-    private int id;
+    protected int id;
 
     @NonNull
     @ColumnInfo(name = "word")
@@ -23,5 +23,5 @@ public class Word {
 
     public Word(@NonNull String word) { this.mWord = word; }
 
-    public String getWord() { return mWord; }
+    public String getWord() { return this.mWord; }
 }
