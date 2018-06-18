@@ -1,10 +1,10 @@
 # Room Word Sample
 
-This is application is a study on how to apply Android Architecture Components. 
+This is application is a study on how to apply Room and Android Architecture Components. 
 
-The displays words in a list (MainActivity, RecyclerView, WordListAdapter).
+The app displays words in a list (MainActivity, RecyclerView, WordListAdapter).
 
-You can add words to the list (NewWordActivity).
+It add words to the list (NewWordActivity).
 
 A word is an instance of the Word entity class.
 
