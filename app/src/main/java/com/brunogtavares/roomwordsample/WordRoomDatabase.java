@@ -13,7 +13,7 @@ import android.support.annotation.NonNull;
  * in the database and set the version number.
  * Listing the entities will create tables in the database.
  */
-@Database(entities = {Word.class}, version = 1)
+@Database(entities = {Word.class}, version = 1, exportSchema = false)
 public abstract class WordRoomDatabase extends RoomDatabase {
 
     // Define the DAOs that work with the database.
