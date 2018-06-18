@@ -1,6 +1,9 @@
 # Room Word Sample
 
-This is application is a study on how to apply Room and Android Architecture Components. 
+This is application is a study on how to apply Room, LiveData and ViewModel which are part of 
+Android Architecture Components. 
+
+**Basic App Functionality**
 
 The app displays words in a list (MainActivity, RecyclerView, WordListAdapter).
 
